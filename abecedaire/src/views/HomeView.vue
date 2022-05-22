@@ -1,9 +1,16 @@
 <script setup lang="ts">
-import TheWelcome from '@/components/TheWelcome.vue'
+import Card from "../components/Card/Card.vue";
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <Card/>
   </main>
 </template>
+
+<style>
+main {
+  display: flex;
+  justify-content: center;
+}
+</style>
