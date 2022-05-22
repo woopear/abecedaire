@@ -4,7 +4,7 @@ import axios from 'axios'
 export const useLetterStore = defineStore({
     id: 'letter',
     state: () => ({
-        rawItems: [],
+        rawItems: [] as any,
         index: 0,
     }),
     getters: {
