@@ -49,7 +49,7 @@ useLetterStore().getLetters()
     font-size: 22px;
     width: 80%;
     height: 550px;
-    text-align: justify;
+    text-align: left;
 }
 
 .t :nth-child(1){
