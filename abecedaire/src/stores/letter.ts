@@ -16,7 +16,7 @@ export const useLetterStore = defineStore({
         },
 
         incrementeIndex() {
-            if(this.index != 19){
+            if(this.index != 21){
                 this.index++
             }
 
