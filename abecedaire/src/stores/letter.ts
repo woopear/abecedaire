@@ -19,16 +19,12 @@ export const useLetterStore = defineStore({
             if(this.index != 21){
                 this.index++
             }
-
-            console.log(this.index);
-            
         },
 
         decrementeIndex() {
             if(this.index != 0){
                 this.index--
             }
-            console.log(this.index);
         },
 
         selectedIndex(index: number) {

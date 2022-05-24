@@ -8,12 +8,10 @@ import { useLetterStore } from '../../stores/letter';
 const letterStore = storeToRefs(useLetterStore())
 
 function incremente() {
-    console.log('coucou');
     useLetterStore().incrementeIndex()
 }
 
 function decremente() {
-    console.log('coucou');
     useLetterStore().decrementeIndex()
 }
 </script>
@@ -43,7 +41,7 @@ function decremente() {
 .card {
     display: flex;
     margin: 20px 0 10px 0;
-    width: 80%;
+    width: 90%;
 }
 
 .card button {

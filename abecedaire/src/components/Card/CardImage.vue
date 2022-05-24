@@ -17,7 +17,7 @@ const letterStore = storeToRefs(useLetterStore())
 @import '@/assets/base.css';
 
 .img_card{
-    flex: 1;
+    width: 50%;
     background-image: url();
     background-repeat: no-repeat;
     background-position: center;

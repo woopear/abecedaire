@@ -26,7 +26,7 @@ useLetterStore().getLetters()
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
+    width: 50%;
     margin: 10px;
     border-radius: 20px;
 }
