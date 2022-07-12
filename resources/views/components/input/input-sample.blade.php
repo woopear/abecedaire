@@ -11,7 +11,7 @@
     'classdiverror' => '', // add your class custom for message error
 
     // custom icon
-    'classdivicon' => 'absolute top-3 pl-2 text-blue-500', // add text-color for color icon and top , top equal padding of input
+    'classdivicon' => 'absolute top-3 pl-2 text-black', // add text-color for color icon and top , top equal padding of input
 
     // custom label
     'classdivlabel' => '', // add your class custom for div around label
