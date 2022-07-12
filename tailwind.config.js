@@ -9,7 +9,11 @@ module.exports = {
     "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        body: ["Prompt", "sans-serif"],
+      }
+    },
   },
   plugins: [],
 }
