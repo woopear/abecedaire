@@ -4,14 +4,24 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-        <title>{{ $titlePage ?? 'Test Laravel' }}</title>
+        <title>{{ $titlePage ?? 'Abecedaire' }}</title>
     </head>
     <body>
-        <main>
-            <button class="cursor-pointer" darkmodebtn>
-                Switch dark mode
-            </button>
-            @yield('content-private')
+        <header>
+            je suis le header
+        </header>
+        <main mainprivate>
+            <section sideleftmenu>
+                <nav navmenuside>
+                    je suis la nav
+                </nav>
+                <footer>
+                    je suis le footer
+                </footer>
+            </section>
+            <section contentmain>
+                @yield('content-app')
+            </section>
         </main>
     </body>
 </html>

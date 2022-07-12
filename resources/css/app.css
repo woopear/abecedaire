@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex: none;
+    background: rgb(255, 104, 104);
+}
+
+main {
+    flex: 1;
+    background: rgb(28, 236, 255);
+}
+
+main[mainprivate] {
+    display: flex;
+    position: relative;
+    flex: 1;
+}
+
+section[contentmain] {
+    background: rgb(28, 236, 255);
+    flex: 1;
+}
+
+section[sideleftmenu] {
+    background: rgb(28, 255, 62);
+    position: sticky;
+    top: 0px;
+    left: 0;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav[navmenuside] {
+    flex: 1;
+}
+
+footer {
+    flex: none;
+    background: rgb(255, 104, 240);
+}
