@@ -14,12 +14,10 @@ body {
 
 header {
     flex: none;
-    background: rgb(255, 104, 104);
 }
 
 main {
     flex: 1;
-    background: rgb(28, 236, 255);
 }
 
 main[mainprivate] {
@@ -29,12 +27,10 @@ main[mainprivate] {
 }
 
 section[contentmain] {
-    background: rgb(28, 236, 255);
     flex: 1;
 }
 
 section[sideleftmenu] {
-    background: rgb(28, 255, 62);
     position: sticky;
     top: 0px;
     left: 0;
@@ -49,5 +45,4 @@ nav[navmenuside] {
 
 footer {
     flex: none;
-    background: rgb(255, 104, 240);
 }
