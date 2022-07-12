@@ -5,7 +5,7 @@
 {{-- give the route for action of form --}}
 <x-form.form-sample 
     {{ $attributes }}
-    action="" {{-- your route for connexion user --}}
+    action="{{ route('/login') }}"
     classdiv="{{ $classdiv ? $classdiv : null }}"
     textbtn="Se connecter"
 >

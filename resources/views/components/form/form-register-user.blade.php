@@ -1,7 +1,7 @@
 @props([
-    'classdiv' => 'w-fit', // classdiv arounded all component'
-    'textbtn' => 'Créer mon compte', // text of btn
-    'action' => null, // your route for reset password of user --}}
+    'classdiv' => 'w-fit mx-auto', // classdiv arounded all component'
+    'textbtn' => 'Créer', // text of btn
+    'action' => '{{ route('/register') }}', // your route for reset password of user --}}
 ])
 
 <x-form.form-sample
@@ -15,35 +15,16 @@
     {{-- firstName --}}
     <x-input.input-sample 
         name="firstName"
-        placeholder="Votre prénom"
+        placeholder="Prénom"
+        classdiv="mb-2"
         required
     />
 
     {{-- lastName --}}
     <x-input.input-sample 
         name="lastName"
-        placeholder="Votre nom"
-        required
-    />
-
-    {{-- address --}}
-    <x-input.input-sample 
-        name="address"
-        placeholder="Votre addresse"
-        required
-    />
-
-    {{-- codePost --}}
-    <x-input.input-sample 
-        name="codePost"
-        placeholder="Votre addresse"
-        required
-    />
-
-    {{-- city --}}
-    <x-input.input-sample 
-        name="city"
-        placeholder="Votre ville"
+        placeholder="Nom"
+        classdiv="mb-2"
         required
     />
 
@@ -51,7 +32,8 @@
     <x-input.input-sample 
         name="email"
         type="email"
-        placeholder="Votre email"
+        placeholder="Email"
+        classdiv="mb-2"
         required
     />
 
@@ -59,7 +41,8 @@
     <x-input.input-sample 
         name="password"
         type="password"
-        placeholder="Entrer votre mot de passe"
+        placeholder="Mot de passe"
+        classdiv="mb-12"
         required
     />
 
