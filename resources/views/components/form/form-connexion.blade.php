@@ -1,5 +1,5 @@
 @props([
-    'classdiv' => 'w-fit', // classdiv arounded all component' 
+    'classdiv' => 'w-fit my-4 mx-auto', // classdiv arounded all component' 
 ])
 
 {{-- give the route for action of form --}}
@@ -7,6 +7,7 @@
     {{ $attributes }}
     action="" {{-- your route for connexion user --}}
     classdiv="{{ $classdiv ? $classdiv : null }}"
+    textbtn="Se connecter"
 >
     {{-- input email or identifiant --}}
     <x-input.input-sample 
@@ -14,6 +15,7 @@
         type="email"
         placeholder="Identifiant"
         iconname="user"
+        classdiv="mb-2"
         requried
     />
 
@@ -23,10 +25,13 @@
         type="password" 
         iconname="password"
         placeholder="Mot de passe"
+        classdiv="mb-1"
         required
     />
 
     {{-- link for forgot password --}}
-    <x-text-link.text-link-xs textlink="Mot de passe oublié ?"/>
+    <div class="flex justify-end mb-12">
+        <x-text-link.text-link-xs-forgot-password textlink="Mot de passe oublié ?"/>
+    </div>
     
 </x-form.form-sample>

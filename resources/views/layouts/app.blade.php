@@ -8,7 +8,7 @@
         @livewireStyles
         <title>{{ $titlePage ?? 'Abecedaire' }}</title>
     </head>
-    <body>
+    <body class="text-white">
         @include('partials.header-app')
         <main>
             <button class="cursor-pointer" darkmodebtn>

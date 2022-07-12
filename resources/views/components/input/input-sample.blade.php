@@ -11,15 +11,15 @@
     'classdiverror' => '', // add your class custom for message error
 
     // custom icon
-    'classdivicon' => 'absolute', // add text-color for color icon and top , top equal padding of input
+    'classdivicon' => 'absolute top-3 pl-2 text-blue-500', // add text-color for color icon and top , top equal padding of input
 
     // custom label
     'classdivlabel' => '', // add your class custom for div around label
     'classlabel' => '', // add your class custom for label
 
     // custom input
-    'classinputforicon' => 'pl-8',
-    'classinput' => 'w-full block outline-none', // add text-size font-weight padding text-color bg-color
+    'classinputforicon' => 'pl-12',
+    'classinput' => 'w-full block outline-none bg-gray-200 text-lg py-3 px-4 rounded-lg text-black', // add text-size font-weight padding text-color bg-color
     'classdivinput' => 'relative', // add custom class div of input 
 ])
 

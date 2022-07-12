@@ -27,7 +27,7 @@
         {{ $slot }}
 
         {{-- btn submit --}}
-        <x-btn.btn-sample type="submit">
+        <x-btn.btn-sample classdiv="flex justify-end" type="submit">
             {{ $textbtn }}
         </x-btn.btn-sample>
     </form>

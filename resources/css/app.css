@@ -4,6 +4,14 @@
 
 html,
 body {
+    background-image: linear-gradient(
+            to top,
+            rgba(50, 146, 255, 0.9) 5%,
+            rgba(0, 0, 0, 0.9) 50%
+        ),
+        url("https://abecedaire-ec632.web.app/assets/body_bg.bb090741.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     min-height: 100vh;
 }
 
