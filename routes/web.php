@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+// private routes
+Route::middleware(['auth'])->name('private.')->group(function () {
+    // private.dashboard
+    Route::get('/private/dashboard', function () {
+    })->name('dashboard');
+});
