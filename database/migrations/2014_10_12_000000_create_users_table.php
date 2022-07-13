@@ -25,7 +25,7 @@ return new class extends Migration
             $table->timestamps();
 
             // relation with role table  
-            $table->foreignId('role_id')->constrained();
+            $table->foreignId('role_id')->nullable()->constrained();
         });
     }
 

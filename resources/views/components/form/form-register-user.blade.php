@@ -1,16 +1,16 @@
 @props([
     'classdiv' => 'w-fit mx-auto', // classdiv arounded all component'
     'textbtn' => 'Créer', // text of btn
-    'action' => '{{ route('/register') }}', // your route for reset password of user --}}
 ])
 
 <x-form.form-sample
     {{ $attributes }}
-    action="{{ $action ? $action : null }}" 
+    action="{{ route('register') }}" 
     classdiv="{{ $classdiv ? $classdiv : null }}"
     textbtn="{{ $textbtn }}"
 >
-    {{-- for select of role for create user by admin --}}
+    {{-- select role --}}
+    <x-input.select-role/>
 
     {{-- firstName --}}
     <x-input.input-sample 
